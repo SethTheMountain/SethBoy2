@@ -9,7 +9,7 @@
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 36pt;
   text-decoration: none;
 }
@@ -34,17 +34,22 @@ h4 {
   width: 100%;
 }
 
+.post-form {
+  display: inline-block;
+}
+
 .top-menu,
 .top-menu:hover,
 .top-menu:visited {
-  color: #ffffff;
+  color: #FFFFFF;
   float: right;
   font-size: 26pt;
   margin-right: 20px;
 }
 
 .post {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
 .post h2 a,
@@ -57,15 +62,114 @@ h4 {
   float: right;
 }
 
+.actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.btn-secondary,
+.btn-danger,
+.btn-primary {
+  padding: 8px 16px !important; /* Override Bootstrap defaults */
+  line-height: 1.5; /* Ensure consistent text alignment */
+  min-height: 38px; /* Ensure all buttons have the same height */
+  box-sizing: border-box; /* Prevent padding from affecting size */
+  display: inline-flex; /* Ensure consistent alignment of text inside buttons */
+  align-items: center; /* Vertically center text inside buttons */
+  justify-content: center; /* Horizontally center text inside buttons */
+  font-size: 16px; /* Consistent font size */
+  border-radius: 4px; /* Consistent border radius (matches Bootstrap default) */
+}
+
 .btn-secondary,
 .btn-secondary:visited {
-  color: #C25100;
-  background: none;
+  color: #FFFFFF;
+  background-color: #C25100;
   border-color: #C25100;
-  margin-left: 15px;
 }
 
 .btn-secondary:hover {
   color: #FFFFFF;
-  background-color: #C25100;
+  background-color: #a34100;
+  border-color: #a34100;
+}
+
+.btn-danger,
+.btn-danger:visited {
+  color: #FFFFFF;
+  background-color: #DC3545;
+  border-color: #DC3545;
+}
+
+.btn-danger:hover {
+  background-color: #bd2130;
+  border-color: #b21f2d;
+}
+
+.btn-primary,
+.btn-primary:visited {
+  color: #FFFFFF;
+  background-color: #007BFF;
+  border-color: #007BFF;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.page-header {
+  background-color: #ff9400;
+  margin-top: 0;
+  padding: 20px 0;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+  color: #ffffff;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+  color: #ffffff;
+  float: right;
+  margin: 10px;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.post h2 a, .post h2 a:visited {
+  color: #000000;
+}
+
+.post .date {
+  color: #828282;
+}
+
+.post-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.actions-row {
+  margin-top: 20px;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.comment {
+  margin: 20px 0px 20px 20px;
 }
